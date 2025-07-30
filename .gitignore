@@ -1,21 +1,13 @@
 # Python virtual environments
 venv/
 .env/
-.venv/
 
 # Python bytecode
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.so
 
 # Environment variables and secrets
 .env
-.env.*
-
-# VS Code settings
-.vscode/
 
 # macOS system files
 .DS_Store
@@ -23,27 +15,6 @@ __pycache__/
 # Logs
 *.log
 
-# Testing
-htmlcov/
-coverage.*
-.cache/
-.pytest_cache/
-
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# Jupyter notebooks (optional)
-.ipynb_checkpoints/
-
-# SQLite or other local DBs (if applicable)
+# Local databases
 *.sqlite3
 *.db
-
-# Migrations (if you want to regenerate them)
-migrations/
-
-# MyPy, Pylint, etc. (optional)
-.mypy_cache/
-.pylint.d/
