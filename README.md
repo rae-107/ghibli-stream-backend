@@ -18,4 +18,5 @@ This is the Python/FastAPI backend for Ghibli Stream. It handles user authentica
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+uvicorn app.main:app --reload
 ```
