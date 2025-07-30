@@ -24,3 +24,7 @@ def login_user(user: schemas.UserLogin, db: Session = Depends(get_db)):
         raise HTTPException(status_code=401, detail="Invalid credentials")
     token = auth.create_access_token(data={"sub": db_user.email})
     return {"access_token": token, "token_type": "bearer"}
+
+@router.get("/me")
+def read_users_me(current_user: models.User = Depends(auth.get_current_user)):
+    return current_user
